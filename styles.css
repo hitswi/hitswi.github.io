@@ -1,0 +1,39 @@
+a:link, a:visited {
+	background-color: black;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: black;
+}
+
+body {
+	background-color: black;
+	text-align: center;
+}
+
+#mainContainer {
+	/* display: inline-block; */
+	text-align: center;
+}
+
+#imageBox.img {
+	display: inline-block;
+	margin: 20px;
+}
+
+#textBox {
+	display: inline-block;
+	background-color: white;
+	margin: 20px;
+	padding: 2px 20px;
+	border-radius: 5px;
+}
+
+#navBox {
+	display: block;
+}
