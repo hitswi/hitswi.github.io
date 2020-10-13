@@ -13,7 +13,8 @@ a:hover, a:active {
 
 body {
 	background-color: pink;
-	text-align: center;
+    text-align: center;
+    padding: 2x 20x;
 }
 
 /* #mainContainer {
