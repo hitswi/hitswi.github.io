@@ -8,11 +8,11 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-	background-color: black;
+	background-color: inline-block;
 }
 
 body {
-	background-color: black;
+	background-color: pink;
 	text-align: center;
 }
 
