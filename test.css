@@ -16,6 +16,11 @@ body {
     text-align: center;
 }
 
+.item1{
+	position: relative;
+	left: 50px;
+}
+
 /* #mainContainer {
 	text-align: center;
 }
