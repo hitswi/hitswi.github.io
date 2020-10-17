@@ -20,6 +20,7 @@ body {
 
 h1 {
 	text-shadow: 2px 2px 5px royalblue;
+	color: white;
 }
 
 .picCenter {
@@ -43,6 +44,19 @@ h1 {
 	font-family: 'Times New Roman';
 	color: #5e6bff;
 }
+
+.footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: #ffebf8;
+    color: #8a8a8a;
+    float: left
 
 /*#imageBox.img {
 	display: inline-block;
