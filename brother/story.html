@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Brother</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script>
+        let imageAndText = [
+            ["scene1.gif", "Scene 2"],
+            ["scene2.gif", "I am thankful for the things <br>you have done for me"],
+            ["scene3.gif", "Thank you for picking me up <br>when I cannot drive yet and letting me play my kpop songs"],
+            ["scene4.gif", "Thank you for buying me food <br>when we went to AppleHill together with friends"],
+            ["scene5.gif", "Thank you for being there for me <br>when I needed someone to talk to and make jokes with"],
+            ["scene67.gif", "And most of all, <br>thank you for being you"],
+            ["scene67.gif", "Brother"],
+        ];
+        let currentPage = 0;
+
+        function nextPage()
+        {
+            currentPage++;
+            if (currentPage < imageAndText.length)
+            {
+                document.getElementById('myImage').src = imageAndText[currentPage][0];
+                document.getElementById('textBox').innerHTML = imageAndText[currentPage][1];
+            }
+            else
+            {
+                window.location.href = "title.html";
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+	<div id="mainContainer">
+		<div id="imageBox">
+			<img id="myImage" src="scene1.gif" alt="scene1" onclick="nextPage();">
+			<!-- <img id="myImage" src="scene1.gif" alt="scene1" onclick="currentPage++; this.src = imageAndText[currentPage][0]; document.getElementById('navBox').innerHTML = imageAndText[currentPage][1];"> -->
+        </div>
+        
+        <div id="textBox">
+            <p>To my Dear Brother</p>
+            <p>I want to say</p>
+        </div>
+
+		<!-- <div id="navBox">
+            Scene 2
+        </div> -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Brother</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script>
+        let imageAndText = [
+            ["scene1.gif", "Scene 2"],
+            ["scene2.gif", "Scene 3"],
+            ["scene3.gif", "Scene 4"],
+            ["scene4.gif", "Scene 5"],
+            ["scene5.gif", "Scene 6"],
+            ["scene6.gif", "Scene 7"],
+        ];
+        let currentPage = 0;
+
+        function nextPage()
+        {
+            currentPage++;
+            document.getElementById('myImage').src = imageAndText[currentPage][0];
+            document.getElementById('textBox').innerHTML = imageAndText[currentPage][1];
+        }
+    </script>
+</head>
+
+
+<body>
+	<div id="mainContainer">
+		<div id="imageBox">
+			<img id="myImage" src="scene1.gif" alt="scene1" onclick="nextPage();">
+			<!-- <img id="myImage" src="scene1.gif" alt="scene1" onclick="currentPage++; this.src = imageAndText[currentPage][0]; document.getElementById('navBox').innerHTML = imageAndText[currentPage][1];"> -->
+        </div>
+        
+        <div id="textBox">
+
+        </div>
+
+		<!-- <div id="navBox">
+            Scene 2 -->
+        </div>
+	</div>
+</body>
+
+</html>
